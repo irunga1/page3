@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+
+        .row header {
+            min-height: 400px;
+            background-image: url('img/header.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        header .col-md-6 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .textContainer {
+            width: 35%;
+            float: right;
+            height: auto;
+        }
+        .textContainer h1 {
+            margin: 0px;
+            font-weight: 700;
+            font-size: 52px;
+            color: #fff;
+            font-family: tahoma;
+            margin-bottom: 15px;
+        }
+        .textContainer p{
+            color:#fff;
+            font-size: 13px;
+        }
+        #newsArea .col-md-4{
+
+            min-height:250px;
+            padding-left:25px;
+            padding-rigth:25px;
+
+
+        }
+        .newsContainer {
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .newsContainer p, #lastInfo p, #videoInfo p {
+            color: #888;
+            font-size: 13px;
+        }
+        #videoInfo{
+            min-height:260px;
+            background-color:#e3e3e3;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .lastInfoTextContainer{
+            width:75%;
+            margin:0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .lastInfoTextContainer h5{
+            font-weight: bold;
+        }
+
+        .input-group-addon {
+            padding: 6px 35px;
+            line-height: 1;
+            text-align: center;
+            background-color: #2dcc70;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            color:#fff;
+            font-weight: bold;
+
+        }
+        .form-control{
+            border-radius: 10px;
+        }
+        #formContainer {width: 45%;margin: 0 auto;margin-top: 30px;}
+        .menu{
+            display: inline-block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color:gray;
+
+        }
+        .menu li {
+            width: 150px;
+            display: inline-block;
+        }
+        #footerMenu {
+            background-color:#e3e3e3;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <header >
+        <div class="col-md-6">
+            <div class="textContainer">
+                <h1>Notify</h1>
+                <p>Lorem Ipsum bla bla bla Lorem Ipsum bla bla bla</p>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="row" id = newsArea>
+        <div class="col-md-4">
+            <div class="newsContainer">
+                <img src="img/caption.png" alt="caption notify">
+                <h3>MyNews</h3>
+                <p>Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla  </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="newsContainer">
+                <img src="img/caption.png" alt="caption notify">
+                <h3>MyNews</h3>
+                <p>Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla  </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="newsContainer">
+                <img src="img/caption.png" alt="caption notify">
+                <h3>MyNews</h3>
+                <p>Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla  </p>
+            </div>
+        </div>
+</div>
+<div class="row" id="videoInfo">
+    <div class="col-md-6">
+        <div id="formContainer">
+            <h3>Get Notify Any Updates</h3>
+            <p>Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla </p>
+            <form action="">
+                <div class="input-group">
+                    <input id="appendedtext" name="appendedtext" class="form-control" placeholder="placeholder" type="text">
+                    <span class="input-group-addon">Notify</span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div id="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cqNmVJk7Zyg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="row" id="lastInfo">
+    <div class="lastInfoTextContainer">
+        <p>Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla</p>
+        <h5>Jane Hunt</h5>
+        <img src="img/footer.png" alt=""/>
+        <h4>Say Hi and Get in touch</h4>
+        <p>Lorem Ipsum bla bla bla bla >Lorem Ipsum bla bla bla bla</p>
+    </div>
+
+
+
+</div>
+<div class="row">
+<div class="col-md-12" id="footerMenu">
+    <ul class="menu">
+        <li>Contact</li>
+        <li>Download</li>
+        <li>Press</li>
+        <li>Email</li>
+        <li>Support</li>
+        <li>Privacy Policy</li>
+    </ul>
+    
+</div>
+</div>
+
+</body>
+</html>

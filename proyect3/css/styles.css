@@ -1,0 +1,237 @@
+
+*{ /*all elements*/
+    font-family: Arial;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:oldlace;
+}
+.wrapper{ /*class*/
+    width:960px;
+    margin:0 auto;
+    background-color: #fff;
+}
+header {
+    min-height: 300px;
+    background-image: url('http://www.stunningmesh.com/wp-content/uploads/2012/07/Green-Nature-Eco-Friendly-Wallpapers-Large-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+header> nav{ /*direct*/
+    min-height:25px;
+    height:auto;
+    background-color: aliceblue;
+    opacity:0.8;
+    text-align: right;
+    height: 45px;
+
+}
+nav ul, nav li {/*multiple selectors*/
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul{
+    height:100%;
+}
+li:nth-child(odd){/*impares*/
+    background-color:darkseagreen;
+}
+li:nth-child(even){/*pares*/
+    background-color:red;
+}
+li:hover{
+    background-color: #aaaaaa;
+
+}
+nav{
+    height:45px;
+}
+nav li span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+nav li:last-child{
+    color:blueviolet;
+}
+nav li {
+    width: 85px;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #88b000;
+}
+nav li {
+    -webkit-transition:  2s; /* For Safari 3.1 to 6.0 */
+    transition: 2s;
+    cursor: pointer;
+}
+section h3[main-title] {
+    color: gray;
+    font-size: 44px;
+    line-height: 25px;
+    margin: 0px;
+    padding: 0px;
+    color: #dc9953;
+    padding-top: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    text-shadow: 1px 1px #ccc;
+}
+.content #firstElement{ /*id*/
+    text-align: center;
+    min-height: auto;
+}
+
+section:nth-child(2) {
+    text-align: center;
+    border-bottom: 1px dotted silver;
+    padding-bottom: 25px;
+}
+
+img[src$=".JPG"]  {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s;
+    width: 200px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+section img:hover{
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+}
+section[attr1="new"]{/*element with especific attribute with equals value */
+    background-color:#fff;
+    min-height: 300px;
+}
+.newsTitle {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.ntColor1{
+    color: #666666;
+}
+.ntColor2{
+    color: #888888;
+}
+.ntColor3{
+    color: #aaaaaa;
+
+}
+
+.context {
+    font-size: 11px;
+    color: #ddd;
+    padding: 0 6%;
+    text-align: justify;
+}
+footer{
+    background-color:#32223d;
+    height:20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.lastInfo{
+    display: inline-block;
+    color: #dddddd;
+    font-size: 10px;
+}
+.messageContent {
+    padding: 0 6%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.clear1 {
+    clear:both;
+}
+.imagecontainer{
+    float:left;
+}
+.imagecontainer img{
+    height:125px;
+}
+.newsText {
+    float: left;
+    margin-left: 15px;
+    width: 83%;
+	position:absolute;
+    overflow: hidden;
+
+	animation: myfirst 1s ;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    
+}
+.news{
+    overflow: hidden;
+    position: relative;
+}
+.contextnp{
+    padding:0px!important;
+}
+
+@-webkit-keyframes myfirst {
+    0%   { left: 900px; top: 0px;}
+    100% {left: 200px; top: 0px;}
+}
+
+@keyframes myfirst {
+   0%   {left : 900px; top: 0px;}
+   100% {left: 200px; top: 0px;}
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay:1.2s;
+    animation-delay: 1.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+
