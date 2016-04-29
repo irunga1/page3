@@ -1,0 +1,194 @@
+
+body{
+    position: absolute;
+    height:100%;
+    width:100%;
+    margin:0px!important;
+    padding:0px!important;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image:url('http://feelit.co/images/back2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+
+}
+.headerCont{
+    display: inline-block;
+    width:80%;
+    min-height: 150px;
+    margin-top:300px;
+}
+.row{
+    min-height: 550px;
+    background-color: #f5f5f5;
+}
+.col-md-4{
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+}
+nav{
+    border-bottom: 1px solid red;
+    min-height: 38px;
+    text-align: center;
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+ul , li{
+    display: inline-block;
+    list-style: none;
+    margin:0;
+    padding:0px;
+}
+li{
+    width:150px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #999999;
+}
+.imgContainer, .textContainer{
+    float:left;
+}
+.textContainer{
+    width:65%;
+
+}
+.textContent{
+
+    bottom: 10px;
+}
+.clear{
+
+}
+.cellphones img{
+    height: 460px;
+}
+
+#slide{
+    width:100%;
+    min-height:400px;
+    background-color:#5d5161;
+    text-align: center;
+}
+.slideContent {
+    color: #fff;
+    width: 50%;
+    display: inline-block;
+    margin-top: 95px;
+}
+#team{
+    text-align: center;
+    background-color: #f5f5f5;
+}
+#team ul{
+    list-style:none;
+    display: block;
+}
+
+#team li {
+    display: inlne-block;
+    width: 250px;
+    position: relative;
+    margin: 40px 30px;
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    padding-bottom: 80px;
+    width: 262px;
+
+}
+#teamContainer{
+    width:60%;
+    display: inline-block;
+}
+#team .infoContainer {
+    position: absolute;
+    background-color: trans;
+    transition: 1s;
+    width: 100%;
+    display: block;
+    text-align: center;
+    width: 260px;
+
+}
+#team li:hover .infoContainer {
+    bottom: 80px;
+    left: 0px;
+    width: 260px;
+    padding-top: 40px;
+    height: 260px;
+    background-color: #000 !important;
+    color: #fff !important;
+    opacity: 0.6;
+}
+#team li:hover .infoContainer h5 {
+    margin-top:25px;
+}
+
+#person{
+    margin:0 15px;
+    display: inline-block;
+}
+#team img{
+    display: block;
+}
+#contact .row{
+    background-color: #fff;
+    text-align: center;
+}
+#contact input,#contact textarea{
+    border:2px solid #e0e0e0;
+    display: block;
+    width:100%;
+    background-color: #f5f5f5;
+    height:50px;
+    margin-top: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color:#999;
+    font-weight: 700;
+    padding-left:5px;
+}
+#contact textarea {
+    height: 200px;
+}
+#contact input[type="button"]{
+    background-color:#6f6f6f;
+    padding:7px;
+    color:#fff;
+    text-align: center;
+    border:none;
+    text-transform: uppercase;
+}
+#contact .row{
+    height: auto;
+}
+.adjust{
+    height:400px!important;
+}
+
+footer {
+    text-align: center;
+    height: 129px;
+    background-color: #f5f5f5;
+    padding-top: 35px;
+}
+.footerContent{
+    display: inline-block;
+    width: 80%;
+}
+footer ul, footer li{
+    display: inline-block;
+    list-style: none;
+}
+footer img {
+    width: 30px;
+}
+footer p{
+    margin-top: 10px;
+}
